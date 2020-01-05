@@ -1,8 +1,8 @@
 {
-    "name": "OpenVPN Server",
+    "name": "OpenVpn-client",
     "version": "1",
     "slug": "openvpn",
-    "description": "Runs a openvpn server",
+    "description": "Runs a openvpn client",
     "startup": "before",
     "boot": "auto",
     "host_network": true,
