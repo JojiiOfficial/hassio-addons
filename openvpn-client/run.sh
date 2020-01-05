@@ -4,5 +4,4 @@ if [ ! -c /dev/net/tun ]; then
 fi
 
 jq --raw-output '.config' /data/options.json > /openvpn.conf
-jq --raw-output '.key' /data/options.json > /openvpn.key
-openvpn --secret /openvpn.key --config /openvpn.conf
+openvpn --config /openvpn.conf

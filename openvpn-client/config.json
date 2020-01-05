@@ -1,18 +1,17 @@
 {
-    "name": "OpenVpn-client",
-    "version": "1",
+    "name": "OpenVPN Client",
+    "version": "1.21",
     "slug": "openvpn",
-    "description": "Runs a openvpn client",
+    "description": "Runs a openvpn server",
     "startup": "before",
     "boot": "auto",
+    "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
     "host_network": true,
     "privileged": ["NET_ADMIN"],
-    "options": {
-      "config": "",
-      "key": ""
+     "options": {
+      "config": ""
     },
     "schema": {
-      "config": "str",
-      "key": "str"
+      "config": "str"
     }
-  }
+}
